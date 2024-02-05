@@ -1,14 +1,15 @@
 [user]
-  name = venson999
-  email = venson999@126.com
+	name = venson999
+	email = venson999@126.com
 {{ if eq .chezmoi.os "linux" }}
 [core]
-  autocrlf = input
+	autocrlf = input
 [credential "https://github.com"]
-  helper = !/usr/bin/gh auth git-credential
+	helper = !/usr/bin/gh auth git-credential
 {{ else if eq .chezmoi.os "windows" }}
 [core]
-  autocrlf = true
+	autocrlf = true
 [credential "helperselector"]
-  helper = manager
+	helper = manager
+	selected = manager
 {{ end }}
