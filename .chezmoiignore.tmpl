@@ -1,7 +1,8 @@
 {{ if or (eq .chezmoi.os "linux") (eq .chezmoi.os "darwin") }}
-.glaze-wm/config.yaml
-.Documents/PowerShell/profile.ps1
+.glaze-wm
+Documents
 {{ else if eq .chezmoi.os "windows" }}
 .tmux.conf
 .zshrc
 {{ end }}
+README.md

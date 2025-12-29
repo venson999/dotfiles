@@ -1,0 +1,29 @@
+packages:
+  darwin:
+    taps:
+    - tw93/tap
+    brews:
+    - fd
+    - fzf
+    - gh
+    - mole
+    - neovim
+    - node
+    - ripgrep
+    - zoxide
+    - zsh
+
+    casks:
+    - cc-switch
+    - claude-code
+    - clash-verge-rev
+    - dbeaver-community
+    - docker-desktop
+    - font-fira-code-nerd-font
+    - font-maple-mono-nf-cn
+    - google-chrome
+    - obsidian
+    - postman
+    - sublime-text
+    - visual-studio-code
+    - yuanbao
