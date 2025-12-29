@@ -5,3 +5,18 @@
 {{ end }}
     type = "git-repo"
     url = "https://github.com/venson999/nvim.git"
+
+# zsh plugins
+{{ if or (eq .chezmoi.os "linux") (eq .chezmoi.os "darwin") }}
+[".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
+    type = "git-repo"
+    url = "https://github.com/zsh-users/zsh-autosuggestions"
+
+[".oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
+    type = "git-repo"
+    url = "https://github.com/zsh-users/zsh-syntax-highlighting"
+
+[".oh-my-zsh/custom/plugins/you-should-use"]
+    type = "git-repo"
+    url = "https://github.com/MichaelAquilina/zsh-you-should-use"
+{{ end }}
