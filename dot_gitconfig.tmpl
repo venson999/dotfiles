@@ -1,15 +1,14 @@
 [user]
 	name = venson999
 	email = venson999@126.com
-{{ if eq .chezmoi.os "linux" }}
+{{ if or (eq .chezmoi.os "linux") (eq .chezmoi.os "darwin") }}
 [core]
 	autocrlf = input
 [credential "https://github.com"]
-	helper = !/usr/bin/gh auth git-credential
+	helper = !gh auth git-credential
 {{ else if eq .chezmoi.os "windows" }}
 [core]
 	autocrlf = true
 [credential "helperselector"]
 	helper = manager
-	selected = manager
 {{ end }}
