@@ -3,6 +3,7 @@ packages:
     taps:
     - tw93/tap
     brews:
+    - bat
     - fd
     - fzf
     - gh
@@ -11,7 +12,6 @@ packages:
     - node
     - ripgrep
     - zoxide
-    - zsh
 
     casks:
     - cc-switch
