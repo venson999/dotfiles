@@ -11,6 +11,9 @@ packages:
     - neovim
     - node
     - ripgrep
+    - tmux
+    - tree-sitter-cli
+    - wget
     - zoxide
 
     casks:
@@ -22,6 +25,7 @@ packages:
     - font-fira-code-nerd-font
     - font-maple-mono-nf-cn
     - google-chrome
+    - intellij-idea
     - obsidian
     - postman
     - sublime-text
