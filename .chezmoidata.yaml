@@ -18,7 +18,6 @@ packages:
 
     casks:
     - cc-switch
-    - claude-code
     - clash-verge-rev
     - dbeaver-community
     - docker-desktop
